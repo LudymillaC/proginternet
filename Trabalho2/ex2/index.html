@@ -1,0 +1,129 @@
+<!-- Author: Ludymilla Christina Registration: 11811BSI285-->
+<!DOCtype html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Cadastro</title>
+</head>
+
+<body>
+    <form action="cadastraCliente.php" method="post">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div>
+                <label for="nome">Nome :</label>
+                <input type="text" id="nome" name="Nome" placeholder="Digite o nome completo" required autofocus
+                    minlength="2" maxlength="50">
+            </div>
+            <br>
+            <div>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="Email" required>
+            </div>
+            <br>
+            <div>
+                <label for="idade">Idade :</label>
+                <input type="number" id="idade" name="Idade" required>
+            </div>
+            <br>
+            <div>
+                <label for="cpf">CPF :</label>
+                <input type="text" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" id="cpf" name="cpf" required>
+            </div>
+            <br>
+            <div>
+                <label for="telefone">Telefone :</label>
+                <input type="tel" id="telefone" name="Telefone" required>
+            </div>
+            <br>
+            <div>
+                <label for="data">Data de Nascimento :</label>
+                <input type="date" id="data" name="Data de Nascimento">
+            </div>
+            <br>
+            <div>
+                <label for="sexo">Sexo :</label>
+                <input type="text" id="sexo" name="sexo">
+            </div>
+            <br>
+            <div>
+                <label for="estadocivil">Estado Civil :</label>
+                <input type="text" id="estadocivil" name="Estado Civil">
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Endereço de Entrega</legend>
+            <br>
+            <div>
+                <label for="cep">CEP :</label>
+                <input type="text" id="cep" required>
+            </div>
+            <br>
+            <div>
+                <select name="logradouro" id="tipo">
+                    <option value="rua">Rua</option>
+                    <option value="av">Avenida</option>
+                    <option value="alameda">Alameda</option>
+                    <option value="condominio">Condomínio</option>
+                    <option value="outros">Outros</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="logradouro">Nome do Logradouro :</label>
+                <input type="text" id="logradouro" name="logradouro" required>
+            </div>
+            <br>
+            <div>
+                <label for="bairro">Bairro :</label>
+                <input type="text" id="bairro" name="bairro" required>
+            </div>
+            <br>
+            <div>
+                <label for="cidade">Cidade :</label>
+                <input type="text" id="cidade" name="cidade" required>
+            </div>
+            <br>
+            <div>
+                <label for="estado">Estado :</label>
+                <input type="text" id="estado" name="estado" required>
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Informações Adicionais</legend>
+            <div>
+                <label for="filmes">Filmes</label>
+                <input type="checkbox" id="filmes" name="filmes">
+                <br>
+                <label for="informatica">Informática</label>
+                <input type="checkbox" id="informatica" name="informatica">
+                <br>
+                <label for="games">Games</label>
+                <input type="checkbox" id="games" name="games">
+                <br>
+                <label for="livros">Livros</label>
+                <input type="checkbox" id="livros" name="livros">
+                <br>
+                <label for="roupas">Roupas</label>
+                <input type="checkbox" id="roupas" name="roupas">
+            </div>
+            <br>
+            <div>
+                <textarea id="descricao" name="descricao" rows="5" cols="33">  Descreva aqui alguma observação.
+                </textarea>
+            </div>
+            <div hidden>
+                <a href="trabalho01ppi.infinityfreeapp.com">Se você conseguir achar!</a>
+            </div>
+        </fieldset>
+        <div>
+            <textarea name="lembrete" id="lembrete" cols="70" rows="1" readonly>  Lembre-se de preencher todos os campos, este aqui é somente um aviso!</textarea>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>
